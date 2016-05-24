@@ -1,0 +1,68 @@
+﻿body {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Segoe UI','Segoe','Segoe WP','Helvetica Neue','Roboto','Helvetica','Arial','Tahoma','Verdana','sans-serif';
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    width: 50%;
+    margin: auto;
+}
+
+#header {
+    height: 120px;
+    line-height: 120px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    background-color: #80397b;
+}
+
+p {
+    margin: 30px;
+}
+
+p.description {
+    margin-top: 15px;
+}
+
+h1 {
+    font-family: 'Segoe UI Semilight','Segoe UI Light','Segoe WP Light','Segoe UI','Segoe','Segoe WP','Helvetica Neue','Roboto','Helvetica','Arial','Tahoma','Verdana','sans-serif';
+    font-weight: 300;
+    font-size: 36px;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Segoe UI Semilight','Segoe UI Light','Segoe WP Light','Segoe UI','Segoe','Segoe WP','Helvetica Neue','Roboto','Helvetica','Arial','Tahoma','Verdana','sans-serif';
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.center {
+    text-align: center;
+}
+
+.actionButton {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #80397b;
+    border: none;
+    border-color: #80397b;
+    padding: 5px 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    line-height: 40px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.actionButton:hover {
+    background-color: #975D93;
+}

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7F619BF4-8F72-4708-919A-9E670ED9DBBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9E188C1-2BE0-49B2-85FE-6BEC78FF9ED7}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OneNoteCNApiSample", "src\OneNoteCNApiSample\OneNoteCNApiSample.xproj", "{416400C6-27A3-4607-89B4-245299D76E36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{416400C6-27A3-4607-89B4-245299D76E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{416400C6-27A3-4607-89B4-245299D76E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{416400C6-27A3-4607-89B4-245299D76E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{416400C6-27A3-4607-89B4-245299D76E36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{416400C6-27A3-4607-89B4-245299D76E36} = {7F619BF4-8F72-4708-919A-9E670ED9DBBB}
+	EndGlobalSection
+EndGlobal

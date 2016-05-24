@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>OneNote Class Notebook API Sample</title>
+    <link rel="stylesheet" type="text/css" href="css/site.css"/>
+</head>
+<body>
+<div id="content">
+    <div id="header"><h1>OneNote Class Notebook API Sample</h1></div>
+    <p class="description">
+        The OneNote Class Notebook APIs let you programmatically create and edit class notebooks.
+        This sample demonstrates the basics on how you would call these APIs using JavaScript, jQuery
+        and ADAL for authentication.
+        For full documenation on the class notebook APIs take a look at our <a href="https://msdn.microsoft.com/office/office365/howto/onenote-classnotebook">article on MSDN</a>.
+        We are also making the source code for this app available on <a href="https://github.com/OneNoteDev/OneNoteCNApiSample">GitHub</a>.
+        To learn more about ADAL you can visit its <a href="https://github.com/AzureAD/azure-activedirectory-library-for-js">GitHub page</a>.
+    </p>
+    <p class="description">
+        To use this app please log in using your Office 365 account.
+    </p>
+
+    <div id="errorMessage"></div>
+
+    <div id="loginArea" class="center">
+        <a id="loginButton" class="actionButton">Log in</a>
+        <a id="logoutButton" class="actionButton" style="display: none">Log out</a>
+    </div>
+
+    <div id="demoArea" style="display: none">
+        <div id="loading" class="center"><h2>Loading your Class Notebooks...</h2></div>
+        <div id="demos" style="display: none">
+            <h2>Manage class notebooks</h2>
+            <p class="description">
+                The Class Notebook APIs let you view, create, and edit OneNote class notebooks. In
+                this example we retrieve all the class notebooks that you are a part of along with
+                links to access them via the web client. If you'd like to create additional class
+                notebooks you can use our <a href="https://www.onenote.com/classnotebook">Class Notebook Creator app</a>.
+            </p>
+            <ul id="classNotebooksList"></ul>
+
+            <h2>Teacher-only section group</h2>
+            <p class="description">
+                A teacher-only section group is an area of the class notebook that is not
+                visible to the students. It's a great way for teachers and co-teachers can
+                collaborate and share notes. Use the following form to add a teacher-only
+                section group to one of your existing notebooks.
+            </p>
+            <select id="privateSpaceSelect" class="classNotebooksDropDown"></select>
+            <a id="privateSpaceButton" class="actionButton">Submit</a>
+            <div id="privateSpaceMessage"></div>
+
+            <h2>Copy sections to the Content Library</h2>
+            <p class="description">
+                The copy content API enables you to share sectiongs between notebooks. You can copy
+                a section from one of your notebooks into the Content Library of one of your other
+                existing notebooks. This example shows how you can use the regular OneNote APIs along
+                with the Class Notebook APIs to give you a lot of control over the structure of the
+                notebooks you create.
+            </p>
+            <p class="description">
+                In the following form, first select the notebook that holds the
+                section you want to copy. Then select the section in that notebook that you want to
+                copy. Finally select the notebook you want to copy the section to. The section will
+                be copied to the Content Library of the target notebook. Please note that this form
+                will expose only sections on top of the notebook hierarchy, meaning that sections
+                within section groups won't show up. However, you can re-write this to access any
+                section within your notebook.
+            </p>
+            <select id="copyContentsSelectSource" class="classNotebooksDropDown">
+                <option value="0">Select source notebook</option>
+            </select>
+            <select id="copyContentsSelectSection" disabled="true">
+                <option value="0">Select section to copy</option>
+            </select>
+            <select id="copyContentsSelectDestination" class="classNotebooksDropDown">
+                <option value="0">Select target notebook</option>
+            </select>
+            <a id="copyContentsButton" class="actionButton">Submit</a>
+            <div id="copyContentsMessage"></div>
+        </div>
+    </div>
+</div>
+<script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.10/js/adal.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/copycontents.js"></script>
+<script src="scripts/privatespace.js"></script>
+</body>
+</html>
