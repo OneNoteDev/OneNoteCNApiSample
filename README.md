@@ -4,7 +4,7 @@ OneNote Class Notebook APIs Sample
 The OneNote Class Notebook APIs let you programmatically create and edit class notebooks. This sample 
 demonstrates the basics on how you would call these APIs using JavaScript, jQuery and ADAL for authentication.
 To learn more about ADAL you can visit its 
-[GitHub page](https://github.com/AzureAD/azure-activedirectory-library-for-js). For full documenation on 
+[GitHub page](https://github.com/AzureAD/azure-activedirectory-library-for-js). For full documentation on 
 the class notebook APIs take a look at our 
 [article on MSDN](https://msdn.microsoft.com/office/office365/howto/onenote-classnotebook).
 
@@ -39,7 +39,7 @@ your app's manifest in the Azure Management Portal, set the "oauth2AllowImplicit
 upload the manifest to the portal.
 
 ### Step 3. Fill in your clientId in app.js
-You will need to specify the clientId for you app in app.js. You can get the clientId in the Azure Management
+You will need to specify the clientId for your app in app.js. You can get the clientId in the Azure Management
 Portal. 
 
 ### Step 4. Run your application
