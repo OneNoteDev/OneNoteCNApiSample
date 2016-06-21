@@ -46,3 +46,5 @@ Portal.
 If you are using Visual Studio, build and run your application. To test your application locally you will
 also need to add the local URL as a reply URL in your app's page in the Azure Management Portal. The sample is
 set to run at localhost:55407.
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
